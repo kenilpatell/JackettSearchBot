@@ -33,4 +33,9 @@ pip3 install -r requirements.txt
 - `API_KEY` : Jackett's API Key. You Can Get It From Your Jackett Server
 - `SERVER_NAME` : You Jackett Domain or IP:PORT
 
+### 3. Running The Bot
+- To Run The Bot Use The Below Command
+```
+python3 search.py
+```
 ### That's It You Can Use Your Bot Now
