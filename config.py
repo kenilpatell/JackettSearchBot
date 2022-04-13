@@ -1,11 +1,7 @@
 # (c) @KenilPatell
 
-import os
-
-
-class Config(object):
-	API_ID = int(os.environ.get("API_ID", "0"))
-	API_HASH = os.environ.get("API_HASH")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	API_KEY = os.environ.get("API_KEY")
-	SERVER_NAME = os.environ.get("SERVER_NAME")
+API_ID = int("YOUR_API_ID")
+API_HASH = "YOUR_API_HASH"
+BOT_TOKEN = "YOUR_BOT_TOKEN"
+API_KEY = "JACKETT_API_KEY"
+SERVER_NAME = "SERVER_NAME"
