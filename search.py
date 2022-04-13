@@ -1,21 +1,20 @@
 import requests
-import os
 import json
 import xml.etree.ElementTree as ET
 from pyrogram import Client, filters
-from config import Config
+from config import API_ID, API_HASH, BOT_TOKEN, API_KEY, SERVER_NAME
 
 bot = Client('pyrogram',
-             api_id=Config.API_ID,
-             api_hash=Config.API_HASH,
-             bot_token=Config.BOT_TOKEN,
+             api_id=API_ID,
+             api_hash=API_HASH,
+             bot_token=BOT_TOKEN,
              workers=50,
              sleep_threshold=10)
 
-API_KEY = Config.API_KEY
-SERVER_NAME = Config.SERVER_NAME
+API_KEY = API_KEY
+SERVER_NAME = SERVER_NAME
 
-base_url = "https://SERVER/api/v2.0/indexers/all/results/torznab/api?apikey=API_KEY&q="
+base_url = f"https://{SERVER_NAME}/api/v2.0/indexers/all/results/torznab/api?apikey={API_KEY}&q="
 
 @bot.on_message(filters.command('start') & filters.private)
 def start(bot, message):
