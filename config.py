@@ -9,3 +9,4 @@ class Config(object):
 	BOT_TOKEN = os.environ.get("BOT_TOKEN")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME")
 	API_KEY = os.environ.get("API_KEY")
+	SERVER_NAME = os.environ.get("SERVER_NAME")
